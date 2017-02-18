@@ -15,14 +15,14 @@ namespace Rasp.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "ASP.NET-MVC testing field";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+
 
             return View();
         }

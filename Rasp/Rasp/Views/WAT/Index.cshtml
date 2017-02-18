@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<div>
+    @using (Html.BeginForm("/AuthorizedAcces", "WAT", FormMethod.Post))
+    {
+        @Html.TextBox("txtUrlInput")        <span><font size="3" color="red">@ViewBag.Message</font></span>
+        <br />
+        <input type="submit" value="Wyślij" style="margin:5px" />
+        <br />
+        
+        <br />
+        <span>@ViewData["result"]</span>
+    }
+</div>
+
