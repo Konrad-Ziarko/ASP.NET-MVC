@@ -5,13 +5,13 @@
 <div>
     @using (Html.BeginForm("/AuthorizedAcces", "WAT", FormMethod.Post))
     {
-        @Html.TextBox("txtUrlInput")        <span><font size="3" color="red">@ViewBag.Message</font></span>
+        @Html.TextBox("txtUrlInput", "", new { style = "margin: 10px 5px 5px 5px" })        <span ><font size="3" color="red" >@ViewBag.Message</font></span>
         <br />
         <input type="submit" value="Wyślij" style="margin:5px" />
         <br />
         
         <br />
-        <span>@ViewData["result"]</span>
+        <span>@ViewData["schedule"]</span>
     }
 </div>
 
