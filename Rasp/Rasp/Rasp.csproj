@@ -172,6 +172,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ErrorHandlerController.cs" />
     <Compile Include="Controllers\GameController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -195,7 +196,9 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Scripts\gra.js" />
+    <Content Include="Scripts\Custome\gra.js" />
+    <Content Include="Scripts\Custome\matrix.js" />
+    <Content Include="Scripts\Custome\repel.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -250,6 +253,10 @@
     <Content Include="Views\Game\Index.cshtml" />
     <Content Include="Views\WAT\Index.cshtml" />
     <Content Include="Views\WAT\AuthorizedAcces.cshtml" />
+    <Content Include="Views\Game\Matrix.cshtml" />
+    <Content Include="Views\Game\SmartRockets.cshtml" />
+    <Content Include="Views\ErrorHandler\Index.cshtml" />
+    <Content Include="Views\Game\Repel.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -17,5 +17,12 @@ namespace Rasp
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
+        protected void Application_Error(object sender, EventArgs e)
+        {
+            var strError = Server.GetLastError().Message;
+            if (string.IsNullOrWhiteSpace(strError)) return;
+            Response.RedirectToRoute("ErrorHandler", new { controller = "ErrorHandler", action = "Index", errMsg = strError });
+            this.Context.ClearError();
+        }
     }
 }

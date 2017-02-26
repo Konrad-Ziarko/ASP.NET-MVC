@@ -13,5 +13,20 @@ namespace Rasp.Controllers
         {
             return View();
         }
+
+        public ActionResult SmartRockets()
+        {
+            return View();
+        }
+
+        public ActionResult Matrix()
+        {
+            return View();
+        }
+
+        public ActionResult Repel()
+        {
+            return View();
+        }
     }
 }

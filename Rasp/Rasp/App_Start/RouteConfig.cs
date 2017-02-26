@@ -23,6 +23,12 @@ namespace Rasp
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Game", action = "Index", id = UrlParameter.Optional }
             );
+
+            routes.MapRoute(
+                name: "ErrorHandler",
+                url: "{ErrorHandler}/{action}/{id}",
+                defaults: new { controller = "ErrorHandler", action = "Index", id = UrlParameter.Optional }
+            );
         }
     }
 }
