@@ -8,9 +8,13 @@ function preload() {
 }
 
 function setup() {
-    width = document.getElementById('game').offsetWidth;
-    height = window.innerHeight - 50;
-    createCanvas(width, height);
+    var w = 800;
+    var h = 600;
+    var cnv = createCanvas(w, h);
+    var x = (windowWidth - width) / 2;
+    var y = (windowHeight - height) / 2;
+    cnv.position(x, y);
+
     background(0, 150);
     var points = font.textToPoints(word, 100, 200, 192, {
         sampleFactor: 0.25

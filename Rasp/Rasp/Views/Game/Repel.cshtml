@@ -9,10 +9,9 @@
     <script src="~/Scripts/p5.dom.js" language="javascript" type="text/javascript"></script>
 </head>
 <body>
-    <div id="game">
-        <input id="newWordTextBox" type="text" value="Konrad"/> <input id="newWordButton" type="button" value="Nowy tekst" onclick="changeWord();" />
-        <script src="~/Scripts/Custome/repel.js" language="javascript" type="text/javascript"></script>
-    </div>
+    <input id="newWordTextBox" type="text" value="Konrad" style="{margin: 5 5 5 5; }" onkeydown = "if (event.keyCode == 13) changeWord();" /> 
+    <input id="newWordButton" type="button" value="Nowy tekst" onclick="changeWord();" />
+    <script src="~/Scripts/Custome/repel.js" language="javascript" type="text/javascript"></script>
 </body>
 </html>
 
